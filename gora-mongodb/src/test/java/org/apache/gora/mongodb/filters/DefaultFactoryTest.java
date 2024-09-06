@@ -117,7 +117,6 @@ public class DefaultFactoryTest {
     filter.addFilter(urlFilter);
 
     Bson dbObject = filterFactory.createFilter(filter, store);
-
     JSONObject expectedJSON = new JSONObject("{ \"h.C·T\" : \"text/html\" , \"url\" : \"http://www.example.com\"}");
     JSONObject actualJSON = new JSONObject(asJson(dbObject));
 
